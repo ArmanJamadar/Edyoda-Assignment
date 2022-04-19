@@ -1,0 +1,118 @@
+Q1.What are the key features of Python?
+---If it makes for an introductory language to programming, Python must mean something. These are its qualities:
+    Interpreted
+    Dynamically-typed
+    Object-oriented
+    Concise and simple
+    Free
+    Has a large community
+
+Q2.Differentiate between lists and tuples.
+---The major difference is that a list is mutable, but a tuple is immutable. 
+
+Q3.What are negative indices?
+---Let’s take a list for this.
+    mylist=[0,1,2,3,4,5,6,7,8]
+    A negative index, unlike a positive one, begins searching from the right.
+    
+Q4. Is Python case-sensitive?
+---A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about      case- lowercase or uppercase. Let’s try this with Python.
+    
+Q5.What is the pass statement in Python?
+---here may be times in our code when we haven’t decided what to do yet, but we must type something for it to be syntactically      correct. In such a case, we use the pass statement.
+    
+Q6.Explain help() and dir() functions in Python.
+---The help() function displays the documentation string and help for its argument.
+   The dir() function displays all the members of an object(any kind).
+    
+Q7.How do you get a list of all the keys in a dictionary?
+---For this, we use the function keys().
+    
+Q8. How will you check if all characters in a string are alphanumeric?
+---For this, we use the method isalnum().
+    
+Q9. We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as       well. Would you like to talk about this?
+
+---Python’s interpreted nature imposes a speed penalty on it.
+    While Python is great for a lot of things, it is weak in mobile computing, and in browsers.
+    Being dynamically-typed, Python uses duck-typing (If it looks like a duck, it must be a duck). This can raise runtime           errors. 
+    Python has underdeveloped database access layers. This renders it a less-than-perfect choice for huge database applications.
+    And then, well, of course. Being easy makes it addictive. Once a Python-coder, always a Python coder.
+    
+Q10.With Python, how do you find out which directory you are currently in?
+---To find this, we use the function/method getcwd(). We import it from the module os.
+    >>> import os
+    >>> os.getcwd()
+    
+Q11.How do you insert an object at a given index in Python?
+--- >>> a=[1,2,4]
+    Now, we use the method insert. The first argument is the index at which to insert, the second is the value to insert.
+
+    >>> a.insert(2,3)
+    >>> a
+    
+Q12.How does a function return values?
+---A function uses the ‘return’ keyword to return a value. Take a look:
+
+    >>> def add(a,b):
+    return a+b
+    
+Q13.How would you define a block in Python?
+---For any kind of statements, we possibly need to define a block of code under them. However, Python does not support curly        braces. This means we must end such statements with colons and then indent the blocks under those with the same amount.
+
+    >>> if 3>1:
+    print("Hello")
+    print("Goodbye")
+
+Q14.Why do we need break and continue in Python?
+---Both break and continue are statements that control flow in Python loops. break stops the current loop from executing further    and transfers the control to the next block. continue jumps to the next iteration of the loop without exhausting it.
+
+Q15. How will you remove a duplicate element from a list?
+---We can turn it into a set to do that.
+
+Q16.What are assignment operators in Python?
+---We can combine all arithmetic operators with the assignment symbol.
+
+    >>> a=7
+    >>> a+=1
+    >>> a
+
+Q17.What is a docstring?
+---A docstring is a documentation string that we use to explain what a construct does. We place it as the first thing under a      function, class, or a method, to describe what it does. We declare a docstring using three sets of single or double-quotes.
+
+    >>> def sayhi():
+    """
+    The function prints Hi
+    """
+    print("Hi")
+    >>> sayhi()
+    ---
+
+Q18.How would you convert a string into an int in Python?
+---If a string contains only numerical characters, you can convert it into an integer using the int() function.
+
+    >>> int('227')
+
+Q19. What is recursion?
+---When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop,    we must have a base condition.
+
+    Let’s take an example.
+
+    >>> def facto(n):
+    if n==1: return 1
+    return n*facto(n-1)
+    >>> facto(4)
+
+Q20.What does the function zip() do?
+---One of the less common functions with beginners, zip() returns an iterator of tuples.
+
+    
+    >>> list(zip(['a','b','c'],[1,2,3]))
+    [(‘a’, 1), (‘b’, 2), (‘c’, 3)]
+
+    Here, it pairs items from the two lists and creates tuples with those. But it doesn’t have to be lists.
+
+    >>> list(zip(('a','b','c'),(1,2,3)))
+    [(‘a’, 1), (‘b’, 2), (‘c’, 3)]
+
+
