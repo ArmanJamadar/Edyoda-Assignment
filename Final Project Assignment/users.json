@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "arman",
+        "password": "123",
+        "age": "22",
+        "phone_number": "1212",
+        "Email": "arman",
+        "Address": "pune",
+        "order_history": {
+            "04-25-2022": [
+                [
+                    "jalebi",
+                    50
+                ],
+                [
+                    "jalebi",
+                    50
+                ],
+                [
+                    "laddu",
+                    100
+                ],
+                [
+                    "laddu",
+                    100
+                ],
+                [
+                    "jalebi",
+                    50
+                ],
+                [
+                    "laddu",
+                    100
+                ],
+                [
+                    "jalebi",
+                    50
+                ],
+                [
+                    "laddu",
+                    100
+                ],
+                [
+                    "jalebi",
+                    50
+                ]
+            ]
+        }
+    }
+]

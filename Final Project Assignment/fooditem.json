@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "jalebi",
+        "no_of_plates": 14,
+        "price": 50
+    },
+    {
+        "id": 2,
+        "name": "laddu",
+        "no_of_plates": 6,
+        "price": 100
+    }
+]
